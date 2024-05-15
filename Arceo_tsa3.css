@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Danfo&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Danfo&family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Pacifico&family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    text-align: center;
+    font-family: "Barlow Condensed";
+    background-image: url(barbie_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+img{
+    height: 150px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 5rem;
+    font-family: "Barlow Condensed";
+    color: black;
+}
+
+.subheading {
+    font-size: 3rem;
+    font-family: "Barlow Condensed";
+    color: black;
+}
+
+.span {
+    color: rgb(170, 14, 61); 
+}
+
+p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: "Roboto Slab";
+    color: black;
+}
