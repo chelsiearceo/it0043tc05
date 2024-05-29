@@ -172,49 +172,97 @@ img {
 
     #grass {
         background-color: rgb(14, 191, 14);
+        box-shadow: 2px 2px 2px 2px pink;
+        font-weight: 300;
+        font-size: large;
+        color: white;
     }
 
     #poison {
         background-color: violet;
+        box-shadow: 2px 2px 2px 2px pink;
+        font-weight: 300;
+        font-size: large;
+        color: white;
     }
 
     #bug {
         background-color: rgb(84, 112, 28);
+        box-shadow: 2px 2px 2px 2px pink;
+        font-weight: 300;
+        font-size: large;
+        color: white;
     }
 
     #fire {
         background-color: red;
+        box-shadow: 2px 2px 2px 2px pink;
+        font-weight: 300;
+        font-size: large;
+        color: white;
     }
 
     #dragon {
         background-color: darkblue;
+        box-shadow: 2px 2px 2px 2px pink;
+        font-weight: 300;
+        font-size: large;
+        color: white;
     }
 
     #normal {
         background-color: gray;
+        box-shadow: 2px 2px 2px 2px pink;
+        font-weight: 300;
+        font-size: large;
+        color: white;
     }
 
     #ghost {
         background-color: darkviolet;
+        box-shadow: 2px 2px 2px 2px pink;
+        font-weight: 300;
+        font-size: large;
+        color: white;
     }
 
     #fairy {
         background-color: hotpink;
+        box-shadow: 2px 2px 2px 2px pink;
+        font-weight: 300;
+        font-size: large;
+        color: white;
     }
 
     #fighting {
         background-color: orangered;
+        box-shadow: 2px 2px 2px 2px pink;
+        font-weight: 300;
+        font-size: large;
+        color: white;
     }
 
     #flying {
         background-color: rgb(91, 91, 172);
+        box-shadow: 2px 2px 2px 2px pink;
+        font-weight: 300;
+        font-size: large;
+        color: white;
     }
 
     #electric {
-        background-color: orange;
+        background-color: rgb(230, 79, 9);
+        box-shadow: 2px 2px 2px 2px pink;
+        font-weight: 300;
+        font-size: large;
+        color: white;
     }
 
     #water {
         background-color: aquamarine;
+        box-shadow: 2px 2px 2px 2px pink;
+        font-weight: 300;
+        font-size: large;
+        color: white;
     }
 }
