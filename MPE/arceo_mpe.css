@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    text-align: center;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: rgb(230, 156, 181);
+    justify-content: center;
+    display: flex;
+}
+
+.flex-container {
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10px;
+    background-image: url("bg_forest.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.box {
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 1.5px solid rgb(238, 202, 213);
+}
+
+P {
+    display: none;
+    color: white;
+    text-shadow: 1px 1px 5px black, 1px 1px 5px black;
+}
+
+.pokeball {
+    display: none;
+}
+
+img {
+    width: 250px;
+    padding: 0.5rem;
+}
+
+#box1 {
+    background-color: yellow;
+}
+
+#box2 {
+    background-color: rgb(42, 167, 42);
+}
+
+#box3 {
+    background-color: rgb(226, 114, 73);
+}
+
+#box4 {
+    background-color: rgb(111, 111, 245);
+}
+
+#box5 {
+    background-color: rgb(145, 129, 82);
+}
+
+#box6 {
+    background-color: rgb(184, 165, 130);
+}
+
+#box7 {
+    background-color: gray;
+}
+
+#box8 {
+    background-color: rgb(255, 218, 150);
+}
+
+#box9 {
+    background-color: orange;
+}
+
+#box10 {
+    background-color: wheat;
+}
+
+#box11 {
+    background-color: rgb(160, 57, 160);
+}
+
+#box12 {
+    background-color: rgb(31, 31, 202);
+}
+
+@media (max-width:1200px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .box:hover {
+        background-image: url(bg_hover_final.jpg);
+    }
+
+    img {
+        width: 75px;
+    }
+
+    p {
+        display: block;
+        font-size: 2rem;
+    }
+
+    .pokeball {
+        display: inline-block;
+    }
+
+    .type {
+        display: none;
+    }
+}
+
+@media (max-width: 510px) {
+    img {
+        width: 200px;
+    }
+    .box {
+        display: block;
+        text-align: center;
+    }
+
+    p {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px black;
+    }
+
+    .flex-container {
+       flex-direction: column;
+    }
+
+    .pokeball {
+        display: none;
+    }
+
+    .type {
+        display: inline-block;
+        justify-content: center;
+        width: 150px;
+        padding: 0.4rem;
+        margin: 0.2rem;
+        border-radius: 5px;
+    }
+
+    #grass {
+        background-color: rgb(14, 191, 14);
+    }
+
+    #poison {
+        background-color: violet;
+    }
+
+    #bug {
+        background-color: rgb(84, 112, 28);
+    }
+
+    #fire {
+        background-color: red;
+    }
+
+    #dragon {
+        background-color: darkblue;
+    }
+
+    #normal {
+        background-color: gray;
+    }
+
+    #ghost {
+        background-color: darkviolet;
+    }
+
+    #fairy {
+        background-color: hotpink;
+    }
+
+    #fighting {
+        background-color: orangered;
+    }
+
+    #flying {
+        background-color: rgb(91, 91, 172);
+    }
+
+    #electric {
+        background-color: orange;
+    }
+
+    #water {
+        background-color: aquamarine;
+    }
+}
