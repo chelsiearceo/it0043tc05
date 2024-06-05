@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Seymour+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Seymour One";
+}
+
+.dbz-container {
+    width: 85vw;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.item {
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.desc {
+    text-align: justify;
+    line-height: 1.5; 
+    font-family: "Cabin", sans-serif;
+}
+
+.details {
+    text-align: center;
+}
+
+#red .details, #corporal-pig .details{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    font-size: 2rem;
+}
+
+.species {
+    font-size: 1.5rem;
+}
+
+img {
+    width: 120px;
+}
+
+#red {
+    background-color: rgb(228,27,35);
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#artist-pig {
+    background-color: rgb(100,202,67);
+}
+
+#chuck {
+    background-color: rgb(204,156,17);
+}
+
+#corporal-pig {
+    background-color: rgb(125,125,125);
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+#dahlia {
+    background-color: rgb(231,154,108);
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+@media (max-width:980px) {
+    .dbz-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #red {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #red .details, #corporal-pig .details{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #artist-pig {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #chuck {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #corporal-pig {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #dahlia {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    #dahlia .details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width:750px) {
+    .dbz-container {
+        grid-template-columns: 1fr;
+    }
+
+    #red {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #artist-pig {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #chuck {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #corporal-pig {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    #dahlia {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    #red .details,
+    #artist-pig .details,
+    #chuck .details,
+    #corporal-pig .details,
+    #dahlia .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
