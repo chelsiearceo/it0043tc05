@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CHELSIE MICHAELA ARCEO</div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="home.html" class="nav-links">Home</a></li>
+                <li class="nav-item"><a href="aboutme.html" class="nav-links">About me</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-links">Projects</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-links active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-container">
+        <form action="submit_form.php" method="post">
+            <div class="info">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="info">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="info">
+                <label for="number">Contact Number</label>
+                <input type="tel" id="number" name="number">
+            </div>
+
+            <div class="info">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="info">
+                <button type="submit">Send</button>
+            </div>
+
+            <div class="social-links">
+                <p>You can also contact me on:</p>
+                <a href="https://web.facebook.com/chelsiemichae"><img src="FB.png" alt="Logo 1"></a>
+                <a href="https://www.instagram.com/arceochelsie/"><img src="INSTAGRAM.png" alt="Logo 2"></a>
+                <a href="https://www.tiktok.com/@arceochelsie"><img src="TT.png" alt="Logo 3"></a>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>Chelsie Michaela Arceo – BSITCST TC05 – FEU TECH – All Rights Reserved</p>
+    </footer>
+</body>
+</html>
