@@ -1,0 +1,206 @@
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.3s all ease;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    flex: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 230, 230);
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+ 
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3b5c59;
+}
+ 
+.nav-list {
+    display: flex;
+}
+ 
+.nav-item {
+    list-style: none;
+    padding: 5px 15px;
+}
+ 
+.nav-links {
+    color: #3b5c59;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+ 
+.nav-links:hover {
+    color: #8bb08f;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #3b5c59;
+    text-align: center;
+    padding: 1rem;
+}
+
+.content h2 {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #3b5c59;
+    text-align: center;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #3b5c59;
+    text-align: center;
+}
+ 
+.social-links {
+    padding: 1rem;
+    display: flex;
+    gap: 20px;
+    justify-content: center; 
+    width: 100%; 
+}
+
+.social-links a {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-links img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+} 
+
+footer {
+    background-color: black;
+    color: pink;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        padding: 10px 0;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .image {
+        justify-content: center;
+    }
+
+    .content {
+        margin: 0 20px;
+    }
+
+    .content h1 {
+        font-size: 1.5rem;
+    }
+
+    .content h2 {
+        font-size: 1.2rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        font-size: 1rem;
+    }
+
+    .content h1 {
+        font-size: 1.2rem;
+    }
+
+    .content h2 {
+        font-size: 1rem;
+    }
+
+    .content p {
+        font-size: 0.9rem;
+    }
+}
